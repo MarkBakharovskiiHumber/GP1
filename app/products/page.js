@@ -1,6 +1,18 @@
 "use client";
 import { useState } from "react";
-import ProductCard from "../../components/ProductCard";
+import ProductCard from "GP1\components\ProductCard.js";
+import ProductList from "GP1\components\ProductList.js";
+
+export default function Products() {
+  return (
+    <div className="container">
+      <h1>All Products</h1>
+      <ProductList />
+    </div>
+  );
+}
+
+
 
 export default function Products() {
   const [cart, setCart] = useState([]);
