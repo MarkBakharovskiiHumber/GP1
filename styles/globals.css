@@ -1,0 +1,55 @@
+body {
+  padding: 15px 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
