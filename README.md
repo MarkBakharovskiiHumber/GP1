@@ -1,13 +1,20 @@
-# E-commerce Store
-
-## Description
-Simple Next.js e-commerce project demonstrating components, routing, and state management.
+# Phase 2 E-commerce Store
 
 ## Features
-- Product listing
-- Add to cart
-- Multi-page navigation
+- Global cart state using Context API
+- Dynamic routing for product details
+- Modular component structure
+- Responsive design
 
-## Run Project
+## Routes
+- / (Home)
+- /products
+- /products/[id]
+- /cart
+
+## State Management
+- Cart managed globally using React Context
+
+## Run
 npm install
 npm run dev
