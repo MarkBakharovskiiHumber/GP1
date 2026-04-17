@@ -1,19 +1,16 @@
 "use client";
-import { useState } from "react";
+import { useCart } from "GP1\context\CartContext.js";
 
 export default function Cart() {
-  const [cart] = useState([
-    { id: 1, name: "Shoes", price: 50 },
-    { id: 2, name: "T-Shirt", price: 25 },
-  ]);
+  const { cart } = useCart();
 
   const total = cart.reduce((sum, item) => sum + item.price, 0);
 
   return (
     <div className="container">
       <h1>Your Cart</h1>
-      {cart.map((item) => (
-        <div key={item.id} className="card">
+      {cart.map((item, index) => (
+        <div key={index} className="card">
           {item.name} - ${item.price}
         </div>
       ))}
